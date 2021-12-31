@@ -1,0 +1,64 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint", "prettier"],
+    "extends": ["airbnb-base", "plugin:@typescript-eslint/recommended"],
+    "settings": {
+        "import/resolver": {
+            "typescript": {}
+        }
+    },
+    "rules": {
+        "implicit-arrow-linebreak": "off",
+        "max-len": [2, 160],
+        "class-methods-use-this": "off",
+        "quotes": ["error", "single"],
+        "max-classes-per-file": 0,
+        "semi": "error",
+        "@typescript-eslint/ban-ts-comment": 0,
+        "@typescript-eslint/no-namespace": 0,
+        "@typescript-eslint/ban-types": 0,
+        "comma-dangle": ["error", "always-multiline"],
+        "eol-last": ["error", "always"],
+        "indent": ["error", 4],
+        "no-multi-spaces": "off",
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "js": "never",
+                "jsx": "never",
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "no-useless-constructor": "off",
+        "sort-imports": [
+            "error",
+            {
+                "ignoreCase": true,
+                "ignoreDeclarationSort": true,
+                "ignoreMemberSort": false
+            }
+        ],
+        "import/order": [
+            "error",
+            {
+                "groups": ["builtin", "external", "internal", "index", ["sibling", "parent"], "object"],
+                "newlines-between": "always-and-inside-groups",
+                "alphabetize": {
+                    "order": "asc",
+                    "caseInsensitive": true
+                },
+                "pathGroups": [
+                    {
+                        "pattern": "@nestjs/**",
+                        "group": "external",
+                        "position": "before"
+                    }
+                ],
+                "pathGroupsExcludedImportTypes": ["builtin"]
+            }
+        ]
+    }
+}
