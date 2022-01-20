@@ -1,7 +1,7 @@
-Code Repository for {Insert Link to Twilio Blog Post}
+Code Repository for the Twilio blog post titled ["Creating IVR Templates with Twilio Studio"](https://www.twilio.com/blog/templatized-ivr-studio)
 
 **Project Overview**:
-This is the back end code accompanying the following blog post: {Link}
+This is the back end code accompanying [this blog post](https://www.twilio.com/blog/templatized-ivr-studio).
 
 This repository can be used to build your own API that can templatize and deploy a custom IVR using Twilio Studio. Learn more about Twilio Studio here:
 
